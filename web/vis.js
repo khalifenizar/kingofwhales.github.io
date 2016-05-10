@@ -684,7 +684,7 @@ d3.json("kingofwhales.github.io/res/demographics.json",function(error,json){
 								alcoholScale(d.stat) + ")")
 						.attr("x2", width + width);
 	}
-})
+});
 
 
 //console.log(data["race"][1]);

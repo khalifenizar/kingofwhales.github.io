@@ -517,7 +517,7 @@ d3.json("kingofwhales.github.io/res/demographics.json",function(error,data){
 //		height = 700 - margin.top -margin.bottom;
 	// based on the value returned, create a new array.
 	var interArray = []
-	interArray.push(data[category])
+	interArray.push(data[0])
 //	console.log(interArray)
 	var currentArray = []
 	for(var a=0;a<8;a++){

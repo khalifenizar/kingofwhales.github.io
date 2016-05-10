@@ -1,15 +1,15 @@
 "use strict";
 
-$(function() {
-  var fileName = "res/demographics.json";
-  $.getJSON(fileName)
-   .done(function (data) {
-     visualize(data);
-   })
-   .fail(function() {
-     alert("Failed to load the JSON file: " + fileName);
-   });
-});
+//$(function() {
+//  var fileName = "res/demographics.json";
+//  $.getJSON(fileName)
+//   .done(function (data) {
+//     visualize(data);
+//   })
+//   .fail(function() {
+//     alert("Failed to load the JSON file: " + fileName);
+//   });
+//});
 //var haha = function(value){
 //	var type = value.getAttribute("data-val");
 //	console.log(type)
@@ -508,7 +508,8 @@ var updateData = function(choice){
 
 
 
-var visualize = function(data,category=0) {
+d3.json("kingofwhales.github.io/res/demographics.json",function(error,json){
+		if (error) return console.warn(error); 
 //	console.log(data);
 
 //	var margin = { top: 50, right: 50, bottom: 50, left: 150 },
